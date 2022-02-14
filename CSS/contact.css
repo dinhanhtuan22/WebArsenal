@@ -1,0 +1,47 @@
+:root {
+    --red-color: #f00107;
+}
+/* breadcrumb */
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    margin: 15px 0px;
+}
+
+
+/* .breadcrumb li.active::before {
+    content: '\e808';
+    font-family: "fontello";
+    padding: 0 15px;
+    color: #707070;
+    font-size: 10px;
+} */
+.breadcrumb>li>a:link, .breadcrumb>li>a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumb li.active {
+    color: var(--red-color);
+}
+
+.form-control {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+#btn-submit {
+    width: 120px;
+    height: 40px;
+    background-color: var(--red-color);
+    color: white;
+    margin: auto;
+    margin-bottom: 10px;
+}
+.contact {
+    color: var(--red-color);
+}
+.contact ul {
+    list-style: none;
+    padding-left: 10px;
+}
+

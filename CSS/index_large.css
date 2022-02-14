@@ -1,0 +1,181 @@
+@media screen {
+    /* banner */
+    .banners .container-fluid {
+        position: relative;    
+    }
+    .banner-image img{
+        width: 100%;
+        max-width: 100%;
+        background-size: contain;
+    }
+
+    .banner-content {
+        color: white;
+        position: absolute;
+        top: 100px;
+        left: 100px;
+        max-width: 35%;
+        background: rgba(0,0,0,0.6);
+        padding: 25px;
+    }
+    .banner-content-about p{
+        text-align: justify;    
+    }
+    .banner-content-button {
+        color: var(--red-color);
+        margin-bottom: 0px;
+    }
+    .banner-content-button a {
+        display: block;
+        width: 200px;
+        height: 40px;
+        line-height: 40px;
+        color: white;
+        text-align: center;
+        background-color: var(--red-color);
+        text-transform: uppercase;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .banner-content-button a:hover {
+        border: 1px solid white;
+        color: white;
+    }
+
+    /* players featured */
+    .players-featured {
+        text-align: center;
+        color: var(--red-color);
+        padding: 15px;
+        
+    }
+    
+
+    .player {
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: wheat;
+        box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+        margin-bottom: 30px;
+    }
+    
+    .player-image {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
+    .player-top {
+        padding: 20px;
+    }
+    .player-title {
+        font-weight: 500;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .player-detail {
+        display: flex;
+        align-items: center;
+    }
+
+    .player-number {
+        width: 50px;
+        height: 50px;
+        border-radius: 100rem;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+    .player-detail-infor {
+        padding-left: 20px;
+        flex: 1;
+    }
+    .player-name {
+        font-weight: 500;
+        font-size: 20px;
+        margin: 0px;  
+    }
+    .player-position {
+        color: #999;
+        font-weight: 300;
+        font-size: 16px;
+        margin: 4px 0px;
+    }
+
+    .player-bottom {
+        padding: 0px 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .player-goal, .player-social {
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 5px 15px;
+        border-radius: 10px;
+        background-color: var(--red-color);
+    }
+    .player-goal span {    
+        font-size: 12px;
+    }
+    .player-bottom ion-icon {
+        margin-right: 5px;
+        align-items: center;
+    }
+
+    /* News */
+    .news-item {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-content: center;
+        border: 1px solid rgb(182, 182, 182);
+        margin-bottom: 10px;
+    }
+
+    .ni-image {
+        display: flex;
+        align-content: center;
+    }
+
+    .ni-image img {
+        width: 200px;
+        height: 124px;
+        display: block;
+        margin: auto 4px;
+    }
+    .ni-content {
+        padding: 4px 4px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .ni-c-title {
+        font-size: 1.2rem;
+        overflow: hidden;    
+        display: -webkit-box;
+        -webkit-line-clamp: 2 !important;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+    .ni-c-detail {
+        text-align: justify;
+        margin: 0px;
+        overflow: hidden;    
+        display: -webkit-box;
+        -webkit-line-clamp: 3 !important;
+        -webkit-box-orient: vertical;
+        text-overflow: ellipsis;
+    }
+    .c-t-link {
+        text-decoration: none;
+        color: var(--text-color);
+    }
+    
+    .c-t-link:hover{
+        color: var(--red-color);
+        cursor: pointer;
+    }
+}
+

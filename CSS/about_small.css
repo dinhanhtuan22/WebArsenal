@@ -1,0 +1,15 @@
+
+@media screen and (max-width: 991px) {
+    .header-logo-content {
+        font-size: 1rem;
+    }
+    .header-menu ul li a{
+        font-size: 1.15rem;
+    }
+   
+        
+    .ft-content {
+        font-size: 1.2rem;
+    }
+    
+}

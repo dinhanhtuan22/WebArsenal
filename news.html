@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./CSS/main.css" />
+  <link rel="stylesheet" href="./CSS/news.css" />
+
+
+
+  <!-- Font google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans&display=swap" rel="stylesheet" />
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous" />
+
+  <!-- icon -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- plugin facebook -->
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v11.0"
+    nonce="RLeG0VyL"></script>
+
+  <!-- JS -->
+  <script src="./JS/news.js"></script>
+
+  <title>Arsenal - Come on you gunner</title>
+
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <div class="container">
+      <nav class="header row">
+        <div class="header-logo col-lg-4 col-md-4 col-sm-12">
+          <img src="./images/Arsenal_Logo.jpg" alt="Arsenal-logo" />
+          <span class="header-logo-content">Come on you gunners</span>
+        </div>
+        <div class="header-menu col-lg-8 col-md-8 col-sm-12">
+          <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="news.html">Tin tức</a></li>
+            <li><a href="players.html">Cầu thủ</a></li>
+            <li><a href="contact.html">Liên hệ</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- main-news -->
+  <section class="news">
+    <div class="container">
+      <div class="breadcrumb-box">
+        <div class="breadcrumb-box__container">
+          <ol class="breadcrumb-left breadcrumb--list">
+            <li>
+              <a href="#">Trang chủ</a>
+            </li>
+            <li class="breadcrumb-item active">
+              > Tin tức
+            </li>
+          </ol>
+          <ol class="breadcrumb-right breadcrumb--list">
+            <li>
+              Tìm kiếm
+            </li>
+            <li>
+              <ion-icon id="btn-search-index" class="icon" name="search"></ion-icon>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div id="news-list" class="news-list row">
+        <h3>Tin tức</h3>
+          <!-- Import news -->
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Modal -->
+  <div id="modal" class="my-modal hide">
+    <div class="my-modal-body">
+      <div class="search-left" action="">
+        <div class="search-left__txt">
+          <input id="modal-search__txt" type="text" placeholder="Nhập nội dung tìm kiếm">
+        </div>
+        <div class="search-select">
+          <span id="search-selected">Mới nhất</span>
+          <ion-icon name="chevron-down"></ion-icon>
+          <ul class="search-select__option">
+            <li id="newest">
+              <span>Mới nhất</span>
+              <ion-icon class="icon-check hide-icon" name="checkmark"></ion-icon>
+            </li>
+            <li id="past-24hours">
+              24 giờ trước
+              <ion-icon class="icon-check hide-icon" name="checkmark"></ion-icon>
+            </li>
+            <li id="past-week">
+              Tuần trước
+              <ion-icon class="icon-check hide-icon" name="checkmark"></ion-icon>
+            </li>
+            <li id="past-month">
+              Tháng trước
+              <ion-icon class="icon-check hide-icon" name="checkmark"></ion-icon>
+            </li>
+            <li id="custom-time">
+              <input type="date" name="dateSelect" id="dateSelected">
+              <ion-icon class="icon-check hide-icon" name="checkmark"></ion-icon>
+            </li>
+            <li id="error-time" class="error-time hide-icon">
+              <p>Ngày xuất bản phải trước ngày hiện tại</p>
+            </li>
+          </ul>
+        </div>
+        <button id="modal-search__btn" type="button">Tìm kiếm</button>
+      </div>
+      <div class="search-right">
+        <ion-icon id="btn-close" class="search-right__icon" name="close"></ion-icon>
+      </div>
+    </div>
+  </div>
+
+  <!-- Loading -->
+  <div id="loadding" class="spinner spinner--hide">
+    <div class="blob blob-0"></div>
+  </div>
+  <!-- footer infor -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-left">
+          <div class="ft-logo">
+            <img src="./images/Arsenal_Logo.jpg" alt="Arsenal-logo" />
+            <span class="ft-content">Come on you gunners</span>
+          </div>
+          <h4 class="ft-name">Câu lạc bộ bóng đá Arsenal</h4>
+          <ul class="fl-contact">
+            <li>
+              <ion-icon name="location"></ion-icon>
+              <span>Sân nhà Emirates</span>
+            </li>
+            <li>
+              <ion-icon name="call"></ion-icon>
+              <span>(+16) 999 888 777</span>
+            </li>
+            <li>
+              <ion-icon name="logo-twitter"></ion-icon>
+              <span>Hãy kết nối với chúng tôi</span>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <div class="fr-menu">
+            <div class="fr-menu-items"><a href="players.html">Cầu thủ</a></div>
+            <div class="fr-menu-items"><a href="news.html">Tin tức</a></div>
+            <div class="fr-menu-items"><a href="contact.html">Liên hệ</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="fb-page" data-href="https://www.facebook.com/Arsenal" data-width="320px" data-hide-cover="false"
+          data-show-facepile="false">facebook</div>
+      </div>
+    </div>
+  </footer>
+
+  <footer class="footer-end">
+    <div class="container">Copyright fx11729@funix.edu.vn</div>
+  </footer>
+
+</body>
+
+</html>

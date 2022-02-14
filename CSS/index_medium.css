@@ -1,0 +1,22 @@
+@media screen and (max-width: 1199px){
+    .header-logo-content {
+        font-size: 1.5rem;
+    }
+    .header-menu ul li a{
+        font-size: 1.5rem;
+    }
+    .banner-content {
+        color: white;
+        position: absolute;
+        top: 35px;
+        left: 45px;
+        max-width: 40%;
+        background: rgba(0,0,0,0.6);
+        padding: 25px;
+    }
+    .banner-content h2 {
+        font-size: 1.5rem;
+    }
+
+    
+}

@@ -1,0 +1,16 @@
+@media screen and (max-width: 1199px){
+    .header-logo-content {
+        font-size: 1.5rem;
+    }
+    .header-menu ul li a{
+        font-size: 1.5rem;
+    }
+    
+    .ab-text  {
+        padding: 10px 10px 10px 0px;
+    }
+    .ab-image  {
+        padding: 10px 0px 10px 10px;
+    }
+    
+}

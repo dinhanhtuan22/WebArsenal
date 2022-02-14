@@ -1,0 +1,49 @@
+@media screen and (max-width: 767px){
+    .header-logo {
+        justify-content: center;
+    }
+    .header-logo img {
+        max-width: 10%;
+        height: auto;
+    }
+    
+    .header-menu {
+        justify-content: center;
+    }
+    .header-menu ul li a{
+        font-size: 0.65rem;
+    }
+   
+    .about-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    #stadium.about-item {
+        flex-direction: column;
+    }
+    #stadium .ab-image {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    #stadium .ab-text {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .ab-text {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .ab-image {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .ft-content {
+        font-size: 1rem;
+    }
+    .footer-right {
+        display: none;
+    }
+}
